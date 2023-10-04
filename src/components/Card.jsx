@@ -7,7 +7,6 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import Button from "../components/Button";
 import { useState } from 'react';
 import { useSelector,useDispatch } from 'react-redux';
-import { setClickedCardId } from '../globalState/reducers';
 import { useNavigate } from "react-router-dom"
 import { setFilteredHotels } from '../globalState/reducers';
 
@@ -24,7 +23,6 @@ function Card() {
     let navigate = useNavigate()
 
     function handleClick(id){
-       dispatch(setClickedCardId(id))
        dispatch(setFilteredHotels(id))
        navigate(`/properties/${id}`)
     }

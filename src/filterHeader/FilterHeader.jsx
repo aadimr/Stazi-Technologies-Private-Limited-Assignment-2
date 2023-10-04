@@ -13,7 +13,6 @@ function FilterHeader() {
     let dispatch = useDispatch()
 
     function handleChange(e,index) {
-        console.log(index)
         setSelectedButtonIndex(index)
         let clickedCity = e.target.name
         dispatch(setFilteredHotels(clickedCity))
@@ -25,7 +24,7 @@ function FilterHeader() {
                 cityName.map((ele, index) => (
                     <Link to={"/"}><Button name={ele} index={index} className={`w-[8rem] font-semibold text-[1rem] h-[2.5rem] rounded-[2rem] shadow-md bg-[#F0F8FF] ${
                         selectedButtonIndex === index
-                          ? 'bg-[#00008B] text-white'
+                          ? 'bg-[#07077e] text-white'
                           : 'bg-[#F0F8FF]'
                       }`} onClick={(e) => handleChange(e, index)} /></Link>
                 ))
