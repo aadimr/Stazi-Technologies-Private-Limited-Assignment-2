@@ -1,1 +1,1 @@
-# Switch to Assignment-2 (branch)
+Switch to Assignment-2 (branch)
