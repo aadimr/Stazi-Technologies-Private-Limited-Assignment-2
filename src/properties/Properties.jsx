@@ -1,6 +1,6 @@
 import Card from "../components/Card"
 
-function HeroPage() {
+function Properties() {
   return (
     <div>
       <Card/>
@@ -8,4 +8,4 @@ function HeroPage() {
   )
 }
 
-export default HeroPage
+export default Properties
